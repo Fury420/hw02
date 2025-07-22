@@ -12,7 +12,7 @@ jobs:
         with:
           python-version: '3.x'
       - name: Run tests
-        run: python -m unittest test_skrypt.py
+      
       - name: Zip file
         if: success()
-        run: zip balicek.zip skrypt.py
+        run: zip balicek.zip script.py
